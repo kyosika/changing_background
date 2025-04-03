@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changing background</title>
+</head>
+<body>
+  <input type="color" id="color">
+  <script>
+    const color1 = document.getElementById('color');
+    color1.addEventListener("input", changeBackground);
+    function changeBackground(){
+        document.body.style.backgroundColor = color1.value;
+        
+    }
+     
+     
+ </script>
+</body>
+</html>
